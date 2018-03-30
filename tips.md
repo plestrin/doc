@@ -1,4 +1,4 @@
-# Miscellanous Tips
+# Miscellaneous Tips
 
 ## Windows
 

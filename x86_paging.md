@@ -18,4 +18,4 @@ Translates 48-bit linear addresses to 52 physical addresses.
 
 ![Linear-Address Translation to a 4-KByte Page using 64-Bit Paging](x86_64_linear_addr_4K.svg)
 
-Virtual addresses are sign-extended from 49 bits, and stored within a 64-bit pointer. Optionally, under control of a system register, the most significant 8 bits of a 64-bit pointer may hold a *tag* which will be ignored when used as a load/store address or the target of an indirect branch.
+Virtual addresses are sign-extended from 48 bits, and stored within a 64-bit pointer. Optionally, under control of a system register, the most significant 8 bits of a 64-bit pointer may hold a *tag* which will be ignored when used as a load/store address or the target of an indirect branch.

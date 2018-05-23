@@ -1,4 +1,4 @@
-/* Page Map Entry (Genric) */
+/* Page Map Entry (Generic) */
 #define PME_get_present(pme) 		(((pme) >> 0 ) & 0x00000001) /* P */
 #define PME_get_writable(pme) 		(((pme) >> 1 ) & 0x00000001) /* P/W */
 #define PME_get_user(pme) 			(((pme) >> 2 ) & 0x00000001) /* U/S */

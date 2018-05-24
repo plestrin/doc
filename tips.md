@@ -10,6 +10,8 @@
 
 * Add an existing user to an existing group: ```usermod -a -G groupName userName```. The user needs to log out and on afterwards.
 
-### GDB
+### Debug
 
-* Dump raw memory to file: ```dump binary memory file_name start_address stop_address```
+* Dump raw memory to file: 
+	* GDB: ```dump binary memory file_name start_address stop_address```
+	* WinDbg: ```.writemem file_name start_address range```

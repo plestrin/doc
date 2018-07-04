@@ -10,9 +10,9 @@
 
 * Add an existing user to an existing group: ```usermod -a -G groupName userName```. The user needs to log out and on afterwards.
 * Update Virtualbox extension pack:
-	* ```VB_V=$(vboxmanage -v | cut -d r -f 1)```
-	* ```wget https://download.virtualbox.org/virtualbox/${VB_V}/Oracle_VM_VirtualBox_Extension_Pack-${VB_V}.vbox-extpack```
-	* ```vboxmanage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-${VB_V}.vbox-extpack```
+	* ```VBV=$(vboxmanage -v | cut -d r -f 1)```
+	* ```wget https://download.virtualbox.org/virtualbox/$VBV/Oracle_VM_VirtualBox_Extension_Pack-$VBV.vbox-extpack```
+	* ```vboxmanage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-$VBV.vbox-extpack```
 
 ### Debug
 

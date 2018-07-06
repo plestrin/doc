@@ -13,6 +13,7 @@
 	* ```VBV=$(vboxmanage -v | cut -d r -f 1)```
 	* ```wget https://download.virtualbox.org/virtualbox/$VBV/Oracle_VM_VirtualBox_Extension_Pack-$VBV.vbox-extpack```
 	* ```vboxmanage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-$VBV.vbox-extpack```
+* Test Snort rule(s) against a pcap file: ```snort -A console -q -c /etc/snort/snort.conf -r file.pcap``` (don't forget to disable offloading: ```ethtool -K interface rx off tx off```)
 
 ### Debug
 

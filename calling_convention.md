@@ -1,7 +1,18 @@
 # x86
 
+## IA-32
 
-# x86-64
+**Name:** cdecl  
+**Arguments:** stack RTL  
+**Scratch Registers:** eax, ecx, edx  
+**Preserved Registers:** ebx, edi, esi, ebp, esp  
+**Return Value:** rax or st0 for floating points  
+**Stack Alignment:** 4 or 16 bytes depending on the version of GCC  
+**Stack Cleanup:** caller  
+**Used By:** GCC - Linux  
+**Remarks:** when returning a struct, the calling code allocates space and passes a pointer to this space via a hidden parameter.
+
+## x86-64
 
 **Name:** System V  
 **Arguments:** rdi, rsi, rdx, rcx, r8, r9 and stack RTL for additional arguments  

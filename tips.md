@@ -15,6 +15,7 @@
 	* `vboxmanage extpack install --replace Oracle_VM_VirtualBox_Extension_Pack-$VBV.vbox-extpack`
 * Kernel header packages: `linux-headers-$(uname -r)`
 * Test Snort rule(s) against a pcap file: `snort -A console -q -c /etc/snort/snort.conf -r file.pcap` (don't forget to disable offloading: `ethtool -K interface rx off tx off`)
+* Specify an additional SSH key when executing a Git command: `ssh-agent bash -c 'ssh-add /path/to/yourkey; git yourcommand'`
 
 ## Debug
 

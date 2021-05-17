@@ -12,6 +12,17 @@
 **Used By:** GCC - Linux  
 **Remarks:** when returning a struct, the calling code allocates space and passes a pointer to this space via a hidden parameter.
 
+---
+
+**Name:** fastcall ([doc](https://docs.microsoft.com/en-us/cpp/cpp/fastcall))  
+**Arguments:** first 2 DWORDs or smaller ecx, edx else stack RTL  
+**Preserved Registers:** ??  
+**Return Value:** eax  
+**Stack Alignment:** ??  
+**Stack Cleanup:** callee  
+**Used By:** Windows, GCC  
+**Remarks:** not fully standardized
+
 ## x86-64
 
 **Name:** System V  
